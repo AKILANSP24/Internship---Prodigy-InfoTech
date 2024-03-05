@@ -1,0 +1,63 @@
+---
+title: "TASK 2"
+author: "AKILAN SP"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library("dplyr")
+library("ggplot2")
+```
+
+```{r}
+data<- read.csv("titanic.csv")
+data
+```
+```{r}
+na.omit(data)
+```
+
+
+```{r}
+#Structure
+str(data)
+```
+```{r}
+summary(data)
+```
+
+
+```{r}
+pairs(~Age + Survived , data = data,
+    main = "Scatterplot Matrix")
+```
+
+
+```{r}
+head(data)
+```
+
+
+```{r}
+tail(data)
+```
+
+
+```{r}
+glimpse(data)
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+
